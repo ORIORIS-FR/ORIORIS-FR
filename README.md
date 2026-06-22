@@ -1,4 +1,4 @@
-# Patrice Vayne | AIS & Agentic Architect
+# ORIORIS | AIS & Agentic Architect
 
 En transition vers la **Cybersécurité (AIS)**. Je conçois des systèmes autonomes et résilients.
 
