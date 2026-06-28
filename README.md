@@ -33,41 +33,6 @@ Je développe et maintiens un environnement local "Zero Trust" où des agents IA
 
 ```mermaid
 graph TD
-    %% --- Inputs ---
-    subgraph Acquisition [Vecteurs d'Entrée]
-        A[Veille Cyber/CVE]
-        B[Forums Techniques]
-    end
-
-    %% --- Le Bunker ---
-    subgraph Bunker [Bunker IA : Infrastructure Locale - Docker]
-        C(Sas n8n)
-        D{Escouade CrewAI<br>LangGraph}
-        E[(Qdrant<br>Vector DB)]
-        
-        C -->|Nettoyage| D
-        D <-->|RAG| E
-    end
-
-    %% --- Outputs ---
-    subgraph PKM [Digital Garden]
-        F[Obsidian Vault]
-    end
-
-    Acquisition -->|Triggers| C
-    D -->|Documentation Structurée| F
-
-    %% Styles (Dark Mode GitHub)
-    style Acquisition fill:#1e1e1e,stroke:#333,color:#fff
-    style Bunker fill:#0d1117,stroke:#ff5722,stroke-width:2px,color:#fff
-    style PKM fill:#1e1e1e,stroke:#7b61ff,stroke-width:2px,color:#fff
-    style D fill:#238636,stroke:#fff,color:#fff
-```
-
----
-
-```mermaid
-graph TD
     %% --- Environnement Cloud / Externe ---
     subgraph Cloud [Cloud & Synchronisation]
         G1[GitHub Privé<br/>Dépôt: Bunker_IA]
@@ -152,6 +117,43 @@ graph TD
     class V1,V2,V3 vol
     class AGENT agent
 ```
+
+---
+
+```mermaid
+graph TD
+    %% --- Inputs ---
+    subgraph Acquisition [Vecteurs d'Entrée]
+        A[Veille Cyber/CVE]
+        B[Forums Techniques]
+    end
+
+    %% --- Le Bunker ---
+    subgraph Bunker [Bunker IA : Infrastructure Locale - Docker]
+        C(Sas n8n)
+        D{Escouade CrewAI<br>LangGraph}
+        E[(Qdrant<br>Vector DB)]
+        
+        C -->|Nettoyage| D
+        D <-->|RAG| E
+    end
+
+    %% --- Outputs ---
+    subgraph PKM [Digital Garden]
+        F[Obsidian Vault]
+    end
+
+    Acquisition -->|Triggers| C
+    D -->|Documentation Structurée| F
+
+    %% Styles (Dark Mode GitHub)
+    style Acquisition fill:#1e1e1e,stroke:#333,color:#fff
+    style Bunker fill:#0d1117,stroke:#ff5722,stroke-width:2px,color:#fff
+    style PKM fill:#1e1e1e,stroke:#7b61ff,stroke-width:2px,color:#fff
+    style D fill:#238636,stroke:#fff,color:#fff
+```
+
+---
 
 ## 💡 Expertise
 *   **Infrastructure as Code & Conteneurisation :** Architecture multi-services (PostgreSQL, Qdrant, LiteLLM) sous Docker.
