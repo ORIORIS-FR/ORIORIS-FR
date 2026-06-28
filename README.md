@@ -33,69 +33,54 @@ Je développe et maintiens un environnement local "Zero Trust" où des agents IA
 
 ```mermaid
 graph TD
-    %% --- Environnement Cloud / Externe ---
+    %% --- Environnement Cloud ---
     subgraph Cloud [Cloud & Synchronisation]
         G1[GitHub Privé<br/>Dépôt: Bunker_IA]
         G2[GitHub Privé<br/>Dépôt: Cerveau]
     end
 
-    %% --- Système de Fichiers Local (Windows/WSL) ---
-    subgraph Host [Serveur Hôte : Dossiers Locaux]
-        V1[(📁 /Bunker_IA<br/>Le Sas / Inbox AI)]
-        V2[(📁 /Cerveau<br/>Le Sanctuaire PKM)]
-    end
-
-   %% --- Tunnels & Accès Externes ---
+    %% --- Couche d'Accès ---
     subgraph Access [Couche d'Accès Sécurisé]
         CF(☁️ cloudflared<br/>Tunnel API)
         TS(🔒 tailscale<br/>VPN Host)
     end
 
-    subgraph Host [Serveur Hôte Windows / WSL]
-        %% --- Volumes Locaux ---
-        subgraph Volumes [Dossiers Locaux Bind Mounts]
+    %% --- Serveur Hôte ---
+    subgraph Host [Serveur Hôte : Windows / WSL]
+        subgraph Volumes [Volumes Bind Mounts]
             V1[(Obsidian<br/>Bunker_IA)]
             V2[(n8n_reception)]
             V3[(Configs<br/>YAML)]
         end
 
-        %% --- Réseau Interne Docker ---
         subgraph DockerNet [Réseau Isolé : bunker_net]
-            
-            %% Cœur Applicatif
             N8N[⚙️ n8n_bunker<br/>Port 5678]
             LITELLM[🧠 litellm_bunker<br/>Port 4000]
             SEARCH[🌐 searxng_bunker<br/>Port 8080]
             AGENT[🤖 agent_veille_bunker<br/>Conteneur Python]
-            
-            %% Front & Monitor
             WEBUI[🖥️ open_webui<br/>Port 3001]
             DOZZLE[👁️ dozzle_bunker<br/>Port 8082]
             
-            %% Persistance
             subgraph Databases [Couche de Données]
                 PG[(🐘 postgres_bunker)]
                 RED[⚡ redis_bunker]
                 QDR[(🎯 qdrant_bunker)]
             end
         end
+        DockerSock(Socket Docker)
     end
 
     %% --- Routage & Dépendances ---
     CF -.->|Expose Sécurisé| N8N
     CF -.->|Expose Sécurisé| LITELLM
-    
     N8N -->|DB_HOST| PG
     N8N -->|REDIS_HOST| RED
-    
     LITELLM -->|DATABASE_URL| PG
     SEARCH -->|SEARXNG_REDIS_URL| RED
-    
     AGENT -->|depends_on| N8N
     AGENT -->|depends_on| PG
     AGENT -->|LITELLM_URL| LITELLM
-    
-    DOZZLE -.->|Lecture seule| DockerSock(Socket Docker)
+    DOZZLE -.->|Lecture seule| DockerSock
     
     %% --- Montages Volumes ---
     V1 -.->|/obsidian_vault| AGENT
@@ -117,7 +102,7 @@ graph TD
     class V1,V2,V3 vol
     class AGENT agent
 ```
-
+    
 ---
 
 ```mermaid
@@ -127,25 +112,20 @@ graph TD
         A[Veille Cyber/CVE]
         B[Forums Techniques]
     end
-
     %% --- Le Bunker ---
     subgraph Bunker [Bunker IA : Infrastructure Locale - Docker]
         C(Sas n8n)
         D{Escouade CrewAI<br>LangGraph}
-        E[(Qdrant<br>Vector DB)]
-        
+        E[(Qdrant<br>Vector DB)]        
         C -->|Nettoyage| D
         D <-->|RAG| E
     end
-
     %% --- Outputs ---
     subgraph PKM [Digital Garden]
         F[Obsidian Vault]
     end
-
     Acquisition -->|Triggers| C
     D -->|Documentation Structurée| F
-
     %% Styles (Dark Mode GitHub)
     style Acquisition fill:#1e1e1e,stroke:#333,color:#fff
     style Bunker fill:#0d1117,stroke:#ff5722,stroke-width:2px,color:#fff
