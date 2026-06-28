@@ -1,12 +1,58 @@
-# ORIORIS | AIS & Agentic Architect
+<div align="center">
+  <img src="https://via.placeholder.com/800x200/000000/FFFFFF?text=CYBER+SECURITY+%7C+ORIORIS+%7C+Agentic+Architecture" alt="Orioris Banner" />
 
-En transition vers la **Cybersécurité (AIS)**. Je conçois des systèmes autonomes et résilients.
+  <h1>Patrice Vayne | Architecte Système & Cybersécurité</h1>
+  
+  <p><b>Industrialiser l'Éphémère. Protéger la Connaissance.</b></p>
 
-## 🚀 Mission : Industrialiser l'Éphémère
-Je ne construis pas des applications, je bâtis des écosystèmes. Mon approche :
-- **Sécurité (Zero Trust) :** Isolation des services, conteneurisation stricte (Docker), accès sécurisés (Tailscale/Cloudflare).
-- **Automatisation (Agentic AI) :** Conception d'agents autonomes (CrewAI/MCP) pour la veille, le parsing et l'optimisation des flux.
-- **Connaissance (PKM) :** Architecture RAG locale pour structurer la donnée et éliminer la dette cognitive.
+  <p>
+    <a href="https://github.com/ORIORIS"><img src="https://img.shields.io/badge/Certification-AIS_En_Cours-blue?style=for-the-badge&logo=shield&logoColor=white" alt="AIS"/></a>
+    <a href="https://github.com/ORIORIS"><img src="https://img.shields.io/badge/Focus-Zero_Trust_%26_Agentic_AI-red?style=for-the-badge&logo=target&logoColor=white" alt="Focus"/></a>
+    <a href="https://github.com/ORIORIS"><img src="https://img.shields.io/badge/Mindset-B2B_To_Cyber-success?style=for-the-badge&logo=rocket&logoColor=white" alt="Mindset"/></a>
+  </p>
+</div>
+
+---
+
+## 🚀 Mission : Transformer le Bruit en Intelligence Tactique
+
+Avec 20 ans d'expérience technique et commerciale B2B, je ne code pas pour faire de la théorie. **Je conçois des écosystèmes résilients.** Ma transition vers la Cybersécurité (AIS) s'appuie sur une conviction stricte : la sécurité commence par l'isolation, et la performance par l'automatisation autonome.
+
+### 🧠 Mon OS Personnel : L'Architecture "Bunker IA"
+
+Je développe et maintiens un environnement local "Zero Trust" où des agents IA autonomes effectuent la veille technologique et la résolution de problèmes sans exposer de données à l'extérieur.
+
+```mermaid
+graph TD
+    %% --- Inputs ---
+    subgraph Acquisition [Vecteurs d'Entrée]
+        A[Veille Cyber/CVE]
+        B[Forums Techniques]
+    end
+
+    %% --- Le Bunker ---
+    subgraph Bunker [Bunker IA : Infrastructure Locale (Docker)]
+        C(Sas n8n)
+        D{Escouade CrewAI<br>LangGraph}
+        E[(Qdrant<br>Vector DB)]
+        
+        C -->|Nettoyage| D
+        D <-->|RAG| E
+    end
+
+    %% --- Outputs ---
+    subgraph PKM [Digital Garden]
+        F[Obsidian Vault]
+    end
+
+    Acquisition -->|Triggers| C
+    D -->|Documentation Structurée| F
+
+    %% Styles (Dark Mode GitHub)
+    style Acquisition fill:#1e1e1e,stroke:#333,color:#fff
+    style Bunker fill:#0d1117,stroke:#ff5722,stroke-width:2px,color:#fff
+    style PKM fill:#1e1e1e,stroke:#7b61ff,stroke-width:2px,color:#fff
+    style D fill:#238636,stroke:#fff,color:#fff
 
 ## 🛠️ Stack Technique
 <p align="left">
