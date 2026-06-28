@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="https://via.placeholder.com/800x200/000000/FFFFFF?text=CYBER+SECURITY+%7C+ORIORIS+%7C+Agentic+Architecture" alt="Orioris Banner" />
+  <img src="banniere_orioris.jpg" alt="ORIORIS Cyber Security" width="100%" />
 
-  <h1>Patrice Vayne | Architecte Système & Cybersécurité</h1>
+  <h1>ORIORIS | Architecte Système & Cybersécurité</h1>
   
   <p><b>Industrialiser l'Éphémère. Protéger la Connaissance.</b></p>
 
@@ -10,6 +10,15 @@
     <a href="https://github.com/ORIORIS"><img src="https://img.shields.io/badge/Focus-Zero_Trust_%26_Agentic_AI-red?style=for-the-badge&logo=target&logoColor=white" alt="Focus"/></a>
     <a href="https://github.com/ORIORIS"><img src="https://img.shields.io/badge/Mindset-B2B_To_Cyber-success?style=for-the-badge&logo=rocket&logoColor=white" alt="Mindset"/></a>
   </p>
+
+<h1> 🛠️ Stack Technique</h1>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/n8n-FF5722?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n"/>
+  <img src="https://img.shields.io/badge/Cybersecurity-000000?style=for-the-badge&logo=hackthebox&logoColor=white" alt="Cybersecurity"/>
+  <img src="https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=obsidian&logoColor=white" alt="Obsidian"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+</p>
 </div>
 
 ---
@@ -53,16 +62,9 @@ graph TD
     style Bunker fill:#0d1117,stroke:#ff5722,stroke-width:2px,color:#fff
     style PKM fill:#1e1e1e,stroke:#7b61ff,stroke-width:2px,color:#fff
     style D fill:#238636,stroke:#fff,color:#fff
+```
 
-## 🛠️ Stack Technique
-<p align="left">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/n8n-FF5722?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n"/>
-  <img src="https://img.shields.io/badge/Cybersecurity-000000?style=for-the-badge&logo=hackthebox&logoColor=white" alt="Cybersecurity"/>
-  <img src="https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=obsidian&logoColor=white" alt="Obsidian"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-</p>
+
 
 ## 💡 Expertise
 *   **Infrastructure as Code & Conteneurisation :** Architecture multi-services (PostgreSQL, Qdrant, LiteLLM) sous Docker.
