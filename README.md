@@ -1,7 +1,7 @@
 <div align="center">
   <img src="banniere_orioris.jpg" alt="ORIORIS Cyber Security" width="100%" />
 
-  <h1>ORIORIS | Architecte Système & Cybersécurité</h1>
+  <h1>ORIORIS | Systèmes, Réseaux & Automatisation/h1>
   
   <p><b>Industrialiser l'Éphémère. Protéger la Connaissance.</b></p>
 
