@@ -74,9 +74,6 @@ Infrastructure as Code & Conteneurisation : Architecture multi-services (Postgre
 
 Automatisation (Dev) : Création de workflows métiers complexes (n8n), scripts d'API et interconnexion de bases de données.
 
-Technique-Commercial et profil de terrain (BTP) avec 20 ans d'expérience, en transition vers l'Administration Systèmes et Réseaux.
-Je conçois et maintiens des architectures locales pour optimiser la donnée et automatiser les processus métiers.
-
 Technique-Commercial et profil de terrain avec 20 ans d'expérience, en transition vers **le Développement et l'Automatisation**.
 Je code et maintiens des outils locaux pour optimiser la donnée, interconnecter les systèmes et automatiser les processus métiers.
 
