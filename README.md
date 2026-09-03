@@ -6,7 +6,7 @@
   <p><b>Industrialiser l'Éphémère. Maîtriser l'Infrastructure.</b></p>
 
   <p>
-    <a href="https://github.com/ORIORIS"><img src="https://img.shields.io/badge/Statut-Alternance_TSSR_%2F_BTS_SIO-blue?style=for-the-badge&logo=shield&logoColor=white" alt="Alternance"/></a>
+    <a href="https://github.com/ORIORIS"><img src="https://img.shields.io/badge/Statut-Alternance_Dev_%26_Automatisation-blue?style=for-the-badge&logo=shield&logoColor=white" alt="Alternance"/></a>
     <a href="https://github.com/ORIORIS"><img src="https://img.shields.io/badge/Focus-Infra_%26_Automatisation-red?style=for-the-badge&logo=target&logoColor=white" alt="Focus"/></a>
     <a href="https://github.com/ORIORIS"><img src="https://img.shields.io/badge/Mindset-Terrain_To_Tech-success?style=for-the-badge&logo=rocket&logoColor=white" alt="Mindset"/></a>
   </p>
@@ -25,7 +25,7 @@
 
 ## 🚀 Mission : Transformer le Bruit en Intelligence Tactique
 
-Avec 20 ans d'expérience technique, terrain et commerciale B2B, je ne code pas pour faire de la théorie. **Je conçois des écosystèmes résilients.** Ma reconversion vers l'administration Systèmes & Réseaux s'appuie sur une conviction stricte : la fiabilité commence par une infrastructure solide, et la performance par l'automatisation.
+Avec 20 ans d'expérience technique, terrain et commerciale B2B, je ne code pas pour faire de la théorie. **Je développe des outils pour le terrain.** Ma reconversion vers le développement s'appuie sur une conviction stricte : la performance d'une entreprise passe par l'automatisation de ses processus métiers (scripts, APIs, pipelines de données).
 
 ### 🧠 Mon OS Personnel : L'Architecture "Bunker IA"
 
@@ -64,7 +64,10 @@ graph TD
     style Bunker fill:#0d1117,stroke:#ff5722,stroke-width:2px,color:#fff
     style PKM fill:#1e1e1e,stroke:#7b61ff,stroke-width:2px,color:#fff
     style D fill:#238636,stroke:#fff,color:#fff
+```
+
 💡 Expertise & Pratique
+
 Systèmes & Réseaux : Routage sécurisé (Tailscale/Cloudflare), environnements Linux, gestion des ports et volumes.
 
 Infrastructure as Code & Conteneurisation : Architecture multi-services (PostgreSQL, n8n, Serveurs web) sous Docker et Docker-Compose.
@@ -74,11 +77,13 @@ Automatisation (Dev) : Création de workflows métiers complexes (n8n), scripts 
 Technique-Commercial et profil de terrain (BTP) avec 20 ans d'expérience, en transition vers l'Administration Systèmes et Réseaux.
 Je conçois et maintiens des architectures locales pour optimiser la donnée et automatiser les processus métiers.
 
-🚀 Projets & Focus
-Bunker IA (Privé) : Infrastructure locale conteneurisée (Docker) orchestrant des workflows et la gestion réseau (bunker_net).
+Technique-Commercial et profil de terrain avec 20 ans d'expérience, en transition vers **le Développement et l'Automatisation**.
+Je code et maintiens des outils locaux pour optimiser la donnée, interconnecter les systèmes et automatiser les processus métiers.
 
-Automatisation n8n : Développement de pipelines pour l'analyse de flux et la structuration de la donnée.
+## 🚀 Projets & Focus
+*   **Bunker IA (Privé) :** Infrastructure locale (Docker) orchestrant des scripts Python et des flux réseau.
+*   **Développement & Automatisation :** Création de pipelines complexes (n8n, APIs) et requêtage de bases de données (PostgreSQL, Qdrant).
+*   **Objectif 2026 :** Formation en alternance orientée Développement / DevOps / Automatisation logicielle.
 
-Objectif 2026 : Préparation au Titre Professionnel TSSR (Technicien Supérieur Systèmes et Réseaux) / BTS SIO.
-
-En recherche active d'une entreprise pour une alternance IT / Systèmes & Réseaux pour la rentrée 2026.
+---
+*En recherche active d'une entreprise pour une alternance en Développement & Automatisation pour la rentrée 2026.*
